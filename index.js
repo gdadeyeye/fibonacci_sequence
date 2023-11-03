@@ -2,8 +2,7 @@ document.getElementById('button').addEventListener('click', function() {
   let input = document.getElementById('input').value;
   let output = document.getElementById('output');
 let sequence = [];
-})
-
+  
 try {
     if (input < 0) {
       throw new Error('Input cannot be negative');
@@ -31,3 +30,5 @@ for (let i = 0; i < input; i++) {
           sequence.push(sequence[i - 1] + sequence[i - 2]);
         }
       }
+})
+
